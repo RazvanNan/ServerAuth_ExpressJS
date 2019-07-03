@@ -1,4 +1,4 @@
-# Server Aithentication Basics in Express JS
+# Server Authentication Basics in Express JS
 ### with sessions and passport packages
 
 The code is from here: https://medium.com/@evangow/server-authentication-basics-express-sessions-passport-and-curl-359b7456003d
