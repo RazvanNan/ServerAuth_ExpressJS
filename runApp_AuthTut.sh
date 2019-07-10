@@ -25,6 +25,8 @@ server () {
 client () {
   clear
   echo
+  cd ..
+  pwd
   echo "Pls press Enter for starting client command (cURL)."
   read
   curl http://localhost:3000/login -c cookie-file.txt -H 'Content-Type: application/json' -d '{"email":"test@test.com", "password":"password"}' -L

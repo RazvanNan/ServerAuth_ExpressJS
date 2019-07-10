@@ -1,5 +1,7 @@
 # Sessions directory's files
 server/sessions/
+# Cookie file for client
+cookie-file.txt
 
 # Logs
 logs
