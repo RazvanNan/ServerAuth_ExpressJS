@@ -1,3 +1,6 @@
+# Sessions directory's files
+sessions/*.json
+
 # Logs
 logs
 *.log
