@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Run in parallel the DB server, Node server and the curl commands
+# This file runs in parallel: the DB server, Node server and the cURL client
 
 #Explanation for the below:
 # > /dev/null: redirects the output of command(stdout) to /dev/null
@@ -25,6 +25,8 @@ server () {
 client () {
   clear
   echo
+  cd ..
+  pwd
   echo "Pls press Enter for starting client command (cURL)."
   read
   curl http://localhost:3000/login -c cookie-file.txt -H 'Content-Type: application/json' -d '{"email":"test@test.com", "password":"password"}' -L
@@ -39,7 +41,7 @@ server
 echo "Server started...."
 pwd
 
-sleep 3
+sleep 3 # waits 3 secs for Node server to start  
 client
 
 echo
